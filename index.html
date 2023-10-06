@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <script>
+                function OnClick(){
+                    console.log("internal script executed.");
+                }
+            </script>
+            <script src="externaljs.js"></script>
+    </head>
+    <body>
+        <button onclick="OnClick()"> Internal Script</button>
+        <button onclick="onExternalFunctionClick()"> External Script</button>
+    </body>
+</html>
