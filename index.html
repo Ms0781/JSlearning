@@ -3,13 +3,20 @@
     <head>
             <script>
                 function OnClick(){
-                    console.log("internal script executed.");
+                    console.log("internal script in head executed.");
                 }
             </script>
             <script src="externaljs.js"></script>
     </head>
     <body>
-        <button onclick="OnClick()"> Internal Script</button>
+        <button onclick="OnClick()"> Internal Script In Head</button>
+        <button onclick="inBodyScript()"> Internal Script In Body</button> 
         <button onclick="onExternalFunctionClick()"> External Script</button>
+
+        <script>
+            function inBodyScript(){
+                console.log("internal script in body executed.");
+            }
+        </script>
     </body>
 </html>

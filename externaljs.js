@@ -1,3 +1,3 @@
-function onExternalFunctionClick(){
-    console.log("External Script Exectued");
+function onExternalFunctionClick() {
+  console.log("External Script Exectued");
 }
